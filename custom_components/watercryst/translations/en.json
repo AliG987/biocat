@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Watercryst",
+        "description": "Enter your WATERCryst API key to connect your myBIOCAT device.",
+        "data": {
+          "api_key": "API key",
+          "name": "Display name",
+          "poll_interval": "State poll interval (seconds)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The API key is invalid.",
+      "not_supported": "This WATERCryst account is not allowed to use the API.",
+      "rate_limited": "The WATERCryst API is rate limited right now. Please wait and try again.",
+      "cannot_connect": "The integration could not reach the WATERCryst API.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This Watercryst account is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Watercryst options",
+        "data": {
+          "name": "Display name",
+          "poll_interval": "State poll interval (seconds)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "switch": {
+      "absence_mode": {
+        "name": "Absence Mode"
+      },
+      "water_supply": {
+        "name": "Water Supply"
+      }
+    },
+    "binary_sensor": {
+      "online": {
+        "name": "Online"
+      },
+      "leak_detected": {
+        "name": "Leak Detected"
+      }
+    },
+    "sensor": {
+      "mode": {
+        "name": "Mode"
+      },
+      "current_event": {
+        "name": "Current Event"
+      },
+      "consumption_latest_l": {
+        "name": "Consumption Latest"
+      },
+      "consumption_latest_date": {
+        "name": "Consumption Latest Date"
+      },
+      "consumption_yesterday_l": {
+        "name": "Consumption Yesterday"
+      }
+    }
+  }
+}

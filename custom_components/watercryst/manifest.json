@@ -1,0 +1,17 @@
+{
+  "domain": "watercryst",
+  "name": "Watercryst",
+  "codeowners": [
+    "@alexandermuthler"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "integration_type": "device",
+  "iot_class": "cloud_polling",
+  "loggers": [
+    "custom_components.watercryst"
+  ],
+  "quality_scale": "silver",
+  "requirements": [],
+  "version": "1.0.0"
+}
